@@ -17,14 +17,14 @@ Bot Alien
 	
 	Open Chrome
 
-    #FOR    ${i}    IN RANGE    9999999
-    #    Click Mine
-	#	Wait Until Screen Contain    claim.PNG    300
-	#	Click Claim
-	#	Wait Until Screen Contain    mining.PNG    300
-	#	Click Mining Hub
-	#	Wait Until Screen Contain    mine.PNG    300
-    #END
+    FOR    ${i}    IN RANGE    9999999
+        Click Mine
+		Wait Until Screen Contain    claim.PNG    300
+		Click Claim
+		Wait Until Screen Contain    mining.PNG    300
+		Click Mining Hub
+		Wait Until Screen Contain    mine.PNG    300
+    END
 
 *** Keywords ***
 Add Needed Image Path
