@@ -19,11 +19,15 @@ Bot Alien
 
     FOR    ${i}    IN RANGE    9999999
         Click Mine
-		Wait Until Screen Contain    claim.PNG    300
+		Wait Until Screen Contain    claim.PNG    3000
 		Click Claim
-		Wait Until Screen Contain    mining.PNG    300
+		Wait Until Screen Contain    captcha.PNG    3000
+		Click Captcha
+		Wait Until Screen Contain    approve.PNG    3000
+		Click Approve
+		Wait Until Screen Contain    mining.PNG    3000
 		Click Mining Hub
-		Wait Until Screen Contain    mine.PNG    300
+		Wait Until Screen Contain    mine.PNG    3000
     END
 
 *** Keywords ***
@@ -41,3 +45,9 @@ Click Mining Hub
 	
 Click Claim
     Click    claim.PNG
+	
+Click Captcha
+    Click    captcha.PNG
+	
+Click Approve
+    Click    approve.PNG
